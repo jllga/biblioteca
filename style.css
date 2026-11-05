@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    color: sienna;
+}
+
+header {
+    background-color: rgb(124, 66, 27);
+    color: beige;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+    font-size: 17px;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: sienna;
+    margin-bottom: 20px;
+}
+
+#resumo {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: rgb(124, 66, 27);
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.destaque {
+    background-color: rgb(255, 235, 205);
+}
+
+.valor {
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(0, 120, 180);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.selecionado {
+    border: 2px solid green;
+    background-color: #e5ffe5;
+}
+
+#limpar {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #8b3030;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#limpar:hover {
+    background-color: #5c1d1d;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(150, 149, 149);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
